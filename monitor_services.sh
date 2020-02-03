@@ -8,7 +8,7 @@ services_name=zabbix #Change services name here
 UP=$(pgrep $services_name | wc -l);
 if [ "$UP" -eq 0 ];
 then
-        echo "MySQL is down.";
+        echo "Services is down.";
         #sudo service zabbix start #you can start services by uncomment this here
 
 else
